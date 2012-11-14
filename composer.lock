@@ -1,5 +1,5 @@
 {
-    "hash": "6f0cd88e7a3895f9791ed2e6ab91c1c4",
+    "hash": "926a6d664c72c3dfc2f7165609e60ca0",
     "packages": [
         {
             "name": "doctrine/common",
@@ -11,7 +11,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/common/zipball/bb0aebbf234db52df476a2b473d434745b34221c",
+                "url": "https://github.com/doctrine/common/archive/bb0aebbf234db52df476a2b473d434745b34221c.zip",
                 "reference": "bb0aebbf234db52df476a2b473d434745b34221c",
                 "shasum": ""
             },
@@ -42,7 +42,8 @@
                 },
                 {
                     "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
+                    "email": "guilhermeblanco@gmail.com",
+                    "homepage": "http://www.instaclick.com"
                 },
                 {
                     "name": "Roman Borschel",
@@ -70,109 +71,49 @@
             ]
         },
         {
-            "name": "doctrine/dbal",
-            "version": "2.3.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/dbal",
-                "reference": "292d5edd17e0a9b9a7ee9eb20d6ae1033059153f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/doctrine/dbal/archive/292d5edd17e0a9b9a7ee9eb20d6ae1033059153f.zip",
-                "reference": "292d5edd17e0a9b9a7ee9eb20d6ae1033059153f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "doctrine/common": "2.3.*"
-            },
-            "time": "1352716871",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3.x-dev"
-                }
-            },
-            "installation-source": "source",
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\DBAL": "lib/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                }
-            ],
-            "description": "Database Abstraction Layer",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "database",
-                "persistence",
-                "dbal",
-                "queryobject"
-            ]
-        },
-        {
-            "name": "doctrine/doctrine-bundle",
+            "name": "friendsofsymfony/user-bundle",
             "version": "dev-master",
-            "target-dir": "Doctrine/Bundle/DoctrineBundle",
+            "target-dir": "FOS/UserBundle",
             "source": {
                 "type": "git",
-                "url": "git://github.com/doctrine/DoctrineBundle.git",
-                "reference": "4fa47caf19c426d607a636b2da73bc0e5a87ec66"
+                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle",
+                "reference": "a197484ad0b53a056e07a13b639ed69466c06c95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/DoctrineBundle/archive/4fa47caf19c426d607a636b2da73bc0e5a87ec66.zip",
-                "reference": "4fa47caf19c426d607a636b2da73bc0e5a87ec66",
+                "url": "https://github.com/FriendsOfSymfony/FOSUserBundle/archive/a197484ad0b53a056e07a13b639ed69466c06c95.zip",
+                "reference": "a197484ad0b53a056e07a13b639ed69466c06c95",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "doctrine/dbal": ">=2.2,<2.4-dev",
                 "symfony/framework-bundle": ">=2.1,<2.3-dev",
-                "symfony/doctrine-bridge": ">=2.1,<2.3-dev",
-                "jdorn/sql-formatter": "1.0.1"
+                "symfony/security-bundle": ">=2.1,<2.3-dev"
             },
             "require-dev": {
-                "doctrine/orm": ">=2.2,<2.4-dev",
-                "symfony/yaml": ">=2.1,<2.3-dev",
-                "symfony/validator": ">=2.1,<2.3-dev"
+                "twig/twig": "*",
+                "doctrine/doctrine-bundle": "*",
+                "swiftmailer/swiftmailer": "*",
+                "willdurand/propel-typehintable-behavior": "dev-master",
+                "symfony/validator": "2.1.*",
+                "symfony/yaml": "2.1.*"
             },
             "suggest": {
-                "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
+                "doctrine/couchdb-odm-bundle": "*",
+                "doctrine/doctrine-bundle": "*",
+                "doctrine/mongodb-odm-bundle": "*"
             },
-            "time": "1352579798",
+            "time": "1351955784",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "installation-source": "source",
             "autoload": {
                 "psr-0": {
-                    "Doctrine\\Bundle\\DoctrineBundle": ""
+                    "FOS\\UserBundle": ""
                 }
             },
             "license": [
@@ -180,95 +121,23 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "name": "Christophe Coevoet",
+                    "email": "stof@notk.org"
                 },
                 {
-                    "name": "Symfony Community",
-                    "homepage": "http://symfony.com/contributors"
+                    "name": "Thibault Duplessis",
+                    "email": "thibault.duplessis@gmail.com",
+                    "homepage": "http://ornicar.github.com"
                 },
                 {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/friendsofsymfony/FOSUserBundle/contributors"
                 }
             ],
-            "description": "Symfony DoctrineBundle",
-            "homepage": "http://www.doctrine-project.org",
+            "description": "Symfony FOSUserBundle",
+            "homepage": "http://friendsofsymfony.github.com",
             "keywords": [
-                "database",
-                "orm",
-                "persistence",
-                "dbal"
-            ]
-        },
-        {
-            "name": "doctrine/orm",
-            "version": "2.3.x-dev",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/doctrine/doctrine2.git",
-                "reference": "77d060ab74212919f1eaace72842ea43bf420f43"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/doctrine/doctrine2/archive/77d060ab74212919f1eaace72842ea43bf420f43.zip",
-                "reference": "77d060ab74212919f1eaace72842ea43bf420f43",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2",
-                "ext-pdo": "*",
-                "symfony/console": "2.*",
-                "doctrine/dbal": "2.3.*"
-            },
-            "suggest": {
-                "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
-            },
-            "time": "1352731781",
-            "bin": [
-                "bin/doctrine",
-                "bin/doctrine.php"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3.x-dev"
-                }
-            },
-            "installation-source": "source",
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\ORM": "lib/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                }
-            ],
-            "description": "Object-Relational-Mapper for PHP",
-            "homepage": "http://www.doctrine-project.org",
-            "keywords": [
-                "database",
-                "orm"
+                "User management"
             ]
         },
         {
@@ -337,7 +206,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-01-02 20:40:52",
+            "time": "2012-01-02 12:40:52",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -444,7 +313,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-01-02 21:32:49",
+            "time": "2012-01-02 13:32:49",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -459,7 +328,7 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -664,6 +533,160 @@
             ]
         },
         {
+            "name": "phing/phing",
+            "version": "2.4.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phingofficial/phing",
+                "reference": "2.4.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/phingofficial/phing/zipball/2.4.12",
+                "reference": "2.4.12",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "time": "2012-04-06 11:33:25",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "classes/phing/"
+                ]
+            },
+            "license": [
+                "LGPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Michiel Rook",
+                    "email": "mrook@php.net"
+                },
+                {
+                    "name": "Phing Community",
+                    "homepage": "http://www.phing.info/trac/wiki/Development/Contributors"
+                }
+            ],
+            "description": "PHing Is Not GNU make; it's a PHP project build system or build tool based on Apache Ant.",
+            "homepage": "http://www.phing.info/",
+            "keywords": [
+                "build",
+                "task",
+                "tool"
+            ]
+        },
+        {
+            "name": "propel/propel-bundle",
+            "version": "1.1.x-dev",
+            "target-dir": "Propel/PropelBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/propelorm/PropelBundle",
+                "reference": "1dbd438f44af95efdad4137b1e1e307b11b151d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/propelorm/PropelBundle/archive/1dbd438f44af95efdad4137b1e1e307b11b151d7.zip",
+                "reference": "1dbd438f44af95efdad4137b1e1e307b11b151d7",
+                "shasum": ""
+            },
+            "require": {
+                "propel/propel1": "1.6.*",
+                "symfony/symfony": ">=2.1,<2.3-dev"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "dev-master",
+                "sensio/framework-extra-bundle": ">=2.1"
+            },
+            "time": "1352657637",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Propel\\PropelBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
+                }
+            ],
+            "description": "Integration of Propel in Symfony2",
+            "keywords": [
+                "orm",
+                "persistence",
+                "propel"
+            ]
+        },
+        {
+            "name": "propel/propel1",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/propelorm/Propel",
+                "reference": "15f4fa171cbc53459adbc9cab126914510f7ec68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/propelorm/Propel/archive/15f4fa171cbc53459adbc9cab126914510f7ec68.zip",
+                "reference": "15f4fa171cbc53459adbc9cab126914510f7ec68",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4",
+                "phing/phing": "2.4.12"
+            },
+            "time": "1352636300",
+            "bin": [
+                "generator/bin/propel-gen",
+                "generator/bin/propel-gen.bat"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "classmap": [
+                    "runtime/lib",
+                    "generator/lib"
+                ]
+            },
+            "include-path": [
+                "runtime/lib",
+                "generator/lib"
+            ],
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
+                }
+            ],
+            "description": "Propel is an open-source Object-Relational Mapping (ORM) for PHP5.",
+            "homepage": "http://www.propelorm.org/",
+            "keywords": [
+                "database",
+                "orm",
+                "persistence",
+                "Active Record",
+                "mapping"
+            ]
+        },
+        {
             "name": "sensio/distribution-bundle",
             "version": "dev-master",
             "target-dir": "Sensio/Bundle/DistributionBundle",
@@ -716,19 +739,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensio/SensioFrameworkExtraBundle",
-                "reference": "022903ff98f041ea22ec50f2b4744aeae8a72f4d"
+                "reference": "e6a189f1cca0fc66b25c92cd160507b2246e8817"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sensio/SensioFrameworkExtraBundle/archive/022903ff98f041ea22ec50f2b4744aeae8a72f4d.zip",
-                "reference": "022903ff98f041ea22ec50f2b4744aeae8a72f4d",
+                "url": "https://github.com/sensio/SensioFrameworkExtraBundle/archive/e6a189f1cca0fc66b25c92cd160507b2246e8817.zip",
+                "reference": "e6a189f1cca0fc66b25c92cd160507b2246e8817",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": ">=2.1,<2.4-dev",
                 "symfony/framework-bundle": "2.2.*"
             },
-            "time": "1349354881",
+            "time": "1352820303",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -831,7 +854,7 @@
                     "dev-master": "4.2-dev"
                 }
             },
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "files": [
                     "lib/swift_required.php"
@@ -930,7 +953,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/MonologBundle/zipball/51517152a608926ee6b40ed8cfbba1a708f0a14f",
+                "url": "https://github.com/symfony/MonologBundle/archive/51517152a608926ee6b40ed8cfbba1a708f0a14f.zip",
                 "reference": "51517152a608926ee6b40ed8cfbba1a708f0a14f",
                 "shasum": ""
             },
@@ -985,7 +1008,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/SwiftmailerBundle/zipball/2393ba6d4f1b544349123e24a16bbc749bef9e55",
+                "url": "https://github.com/symfony/SwiftmailerBundle/archive/2393ba6d4f1b544349123e24a16bbc749bef9e55.zip",
                 "reference": "2393ba6d4f1b544349123e24a16bbc749bef9e55",
                 "shasum": ""
             },
@@ -1035,12 +1058,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony/symfony.git",
-                "reference": "83de4c2b0209adf807383c4f440d0b36e7aaa04c"
+                "reference": "7bfe13c9128879c4d2451d3a1314d5735b398ccd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/symfony/archive/83de4c2b0209adf807383c4f440d0b36e7aaa04c.zip",
-                "reference": "83de4c2b0209adf807383c4f440d0b36e7aaa04c",
+                "url": "https://github.com/symfony/symfony/archive/7bfe13c9128879c4d2451d3a1314d5735b398ccd.zip",
+                "reference": "7bfe13c9128879c4d2451d3a1314d5735b398ccd",
                 "shasum": ""
             },
             "require": {
@@ -1093,7 +1116,7 @@
             "suggest": {
                 "doctrine/data-fixtures": "1.0.*"
             },
-            "time": "1352812812",
+            "time": "1352824527",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1139,7 +1162,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig-extensions/zipball/dcdff02fbac1282e6b8f4d0558cc7e9580105688",
+                "url": "https://github.com/fabpot/Twig-extensions/archive/dcdff02fbac1282e6b8f4d0558cc7e9580105688.zip",
                 "reference": "dcdff02fbac1282e6b8f4d0558cc7e9580105688",
                 "shasum": ""
             },
@@ -1224,57 +1247,51 @@
             "keywords": [
                 "templating"
             ]
-        }
-    ],
-    "packages-dev": [
+        },
         {
-            "name": "jdorn/sql-formatter",
-            "version": "v1.0.1",
+            "name": "willdurand/propel-typehintable-behavior",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/jdorn/sql-formatter.git",
-                "reference": "v1.0.1"
+                "url": "https://github.com/willdurand/TypehintableBehavior",
+                "reference": "1.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/jdorn/sql-formatter/archive/v1.0.1.zip",
-                "reference": "v1.0.1",
+                "url": "https://github.com/willdurand/TypehintableBehavior/archive/1.0.3.zip",
+                "reference": "1.0.3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.4"
+                "propel/propel1": "1.6.*"
             },
-            "time": "2012-10-04 22:10:16",
+            "time": "1342361004",
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "installation-source": "dist",
+            "installation-source": "source",
             "autoload": {
                 "classmap": [
-                    "lib"
+                    "src/"
                 ]
             },
             "license": [
-                "LGPL"
+                "MIT"
             ],
             "authors": [
                 {
-                    "name": "Jeremy Dorn",
-                    "email": "jeremy@jeremydorn.com",
-                    "homepage": "http://jeremydorn.com/"
+                    "name": "William DURAND",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
                 }
             ],
-            "description": "a PHP SQL highlighting library",
-            "homepage": "https://github.com/jdorn/sql-formatter/",
+            "description": "Insane Propel behavior that helps you to be compliant with third-party interfaces by adding type hint to generated methods.",
             "keywords": [
-                "sql",
-                "highlight"
+                "propel",
+                "Behavior",
+                "typehint"
             ]
         }
     ],
+    "packages-dev": null,
     "aliases": [
 
     ],

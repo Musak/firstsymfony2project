@@ -27,6 +27,10 @@ class DemoController extends Controller
      */
     public function helloAction($name)
     {
+	$author = new \Acme\DemoBundle\Model\Author();        
+	$author->setFirstName($name);        
+	$author->save();
+        
         return array('name' => $name);
     }
 
